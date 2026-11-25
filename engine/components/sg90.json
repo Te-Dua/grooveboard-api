@@ -1,0 +1,32 @@
+{
+  "id": "sg90",
+  "name": "SG90 / SM-S2309S Micro Servo",
+  "footprint": {
+    "length": 23,
+    "width": 12,
+    "height": 29
+  },
+  "mount": "slot",
+  "clearance": 1.5,
+  "pins": {
+    "all": [
+      "SIGNAL",
+      "V+",
+      "GND"
+    ]
+  },
+  "needs": {
+    "power": 5,
+    "signal_is_output": true,
+    "current_spikes": true
+  },
+  "notes": "Power (V+) from 5V/VIN, NOT 3.3V (brownout risk). Signal to a PWM-capable output pin.",
+  "pocket_depth": 1.6,
+  "pin_layout": [
+    {
+      "edge": "south",
+      "count": 3,
+      "pitch": 2.54
+    }
+  ]
+}

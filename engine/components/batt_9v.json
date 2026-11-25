@@ -1,0 +1,30 @@
+{
+  "id": "batt_9v",
+  "name": "9V Battery (with holder)",
+  "footprint": {
+    "length": 48,
+    "width": 27,
+    "height": 18
+  },
+  "mount": "slot",
+  "clearance": 2,
+  "pins": {
+    "all": [
+      "V+",
+      "V-"
+    ]
+  },
+  "provides": {
+    "voltage": 9,
+    "role": "motor_power"
+  },
+  "notes": "Supplies VM (motor power). V- is common ground. Good for TB6612 VM (6-12V range).",
+  "pocket_depth": 1.6,
+  "pin_layout": [
+    {
+      "edge": "south",
+      "count": 2,
+      "pitch": 5.0
+    }
+  ]
+}

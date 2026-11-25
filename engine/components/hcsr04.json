@@ -1,0 +1,34 @@
+{
+  "id": "hcsr04",
+  "name": "HC-SR04 Ultrasonic Sensor",
+  "footprint": {
+    "length": 45,
+    "width": 20,
+    "height": 15
+  },
+  "mount": "slot",
+  "clearance": 2,
+  "pins": {
+    "all": [
+      "VCC",
+      "TRIG",
+      "ECHO",
+      "GND"
+    ]
+  },
+  "needs": {
+    "power": 5,
+    "power_tolerant_3v3": true,
+    "echo_voltage": 5,
+    "echo_needs_divider_below": 5
+  },
+  "notes": "Echo outputs 5V. Feed a 3.3V MCU via divider, OR power sensor from 3.3V to make echo ~3.3V (slightly reduced range).",
+  "pocket_depth": 1.6,
+  "pin_layout": [
+    {
+      "edge": "south",
+      "count": 4,
+      "pitch": 2.54
+    }
+  ]
+}

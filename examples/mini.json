@@ -1,0 +1,16 @@
+{
+  "name": "mini_test",
+  "board": { "length": 55, "width": 40, "base_h": 6, "cap_h": 2, "wall": 4 },
+  "components": [
+    { "id": "chip", "x": -8, "y": 2, "row_gap": 14,
+      "junctions": { "A2": 1, "B2": 1 },
+      "rows": [
+        { "side": "left",  "pins": ["A1", "A2"] },
+        { "side": "right", "pins": ["B1", "B2"] }
+      ]
+    }
+  ],
+  "connections": [
+    { "from": "chip.A1", "to": "chip.B1" }
+  ]
+}

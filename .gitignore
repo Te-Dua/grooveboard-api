@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+# generated artifacts
+*.stl
+*.scad
+*.png
+/tmp_jobs/
+.DS_Store
+# runtime data / secrets - never commit
+*.db
+*.sqlite
+*.sqlite3
+.env
+.env.*
+!.env.example

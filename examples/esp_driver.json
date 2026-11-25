@@ -1,0 +1,21 @@
+{
+  "name": "road_demo",
+  "board": { "length": 150, "width": 75, "base_h": 6, "cap_h": 2, "wall": 4 },
+  "components": [
+    { "id": "esp", "x": -42, "y": 5, "row_gap": 26, "rows": [
+      { "side": "left",  "pins": ["3V3","GND","D15","D2","D4","D16","D17","D5","D18","D19","D21","RX0","TX0","D22","D23"] },
+      { "side": "right", "pins": ["VIN","GND2","D13","D12","D14","D27","D26","D25","D33","D32","D35","D34","VN","VP","EN"] }
+    ]},
+    { "id": "tb", "x": 48, "y": 5, "row_gap": 16,
+      "junctions": { "AO1": 1, "AO2": 1, "BO1": 1, "BO2": 1, "VM": 1 },
+      "rows": [
+        { "side": "left",  "pins": ["PWMA","AIN1","AIN2","STBY","BIN1","BIN2","PWMB","GNDc"] },
+        { "side": "right", "pins": ["VM","VCC","GNDp","AO1","AO2","BO1","BO2","GND2p"] }
+    ]}
+  ],
+  "connections": [
+    { "from": "esp.D4", "to": "tb.PWMA" },
+    { "from": "esp.D16", "to": "tb.AIN1" },
+    { "from": "esp.D21", "to": "tb.STBY" }
+  ]
+}
